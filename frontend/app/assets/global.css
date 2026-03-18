@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* You can add your global styles below */
+html,
+body {
+  height: 100%;
+}

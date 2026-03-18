@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "jsx": "preserve",
+    "types": ["jest", "@types/jest", "@vue/test-utils"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"],
+      "~/*": ["app/*"]
+    }
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.vue",
+    "tests/**/*.ts",
+    "__mocks__/**/*.ts"
+  ]
+}
