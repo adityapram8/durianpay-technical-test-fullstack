@@ -2,6 +2,10 @@
   definePageMeta({
     layout: 'auth',
   })
+
+  const onSubmit = () => {
+    // navigateTo('/dashboard')
+  }
 </script>
 
 <template>
@@ -9,14 +13,7 @@
     <div
       class="w-full max-w-md rounded-2xl border border-gray-100 bg-white p-8 shadow-xl shadow-gray-200/50 dark:border-slate-700 dark:bg-slate-800 dark:shadow-slate-900/50"
     >
-      <div class="mb-10 text-center">
-        <h1
-          class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-3xl font-bold text-transparent dark:from-blue-400 dark:to-indigo-400"
-        >
-          Welcome Back
-        </h1>
-        <p class="mt-2 text-gray-500 dark:text-gray-400">Sign in to your account</p>
-      </div>
+      <div class="mb-10 text-center">x</div>
 
       <form @submit.prevent="" class="space-y-6">
         <div>
@@ -26,7 +23,7 @@
           <input
             type="email"
             placeholder="you@example.com"
-            class="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-blue-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white"
+            class="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white"
           />
         </div>
 
@@ -37,7 +34,7 @@
           <input
             type="password"
             placeholder="••••••••"
-            class="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-blue-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white"
+            class="w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-gray-900 transition-all outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500 dark:border-slate-600 dark:bg-slate-700 dark:text-white"
           />
         </div>
 
@@ -58,7 +55,7 @@
 
         <button
           type="button"
-          @click="$router.push('/dashboard')"
+          @click="onSubmit"
           class="w-full transform rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 font-medium text-white shadow-lg shadow-blue-500/30 transition-all duration-200 hover:-translate-y-0.5 hover:from-blue-700 hover:to-indigo-700"
         >
           Sign In

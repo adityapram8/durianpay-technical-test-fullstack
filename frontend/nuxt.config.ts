@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   future: {
@@ -9,11 +11,14 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   // Tailwind via @nuxtjs/tailwindcss module
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
-  pinia: {
-    storesDirs: ['./stores/**'],
+  vite: {
+    plugins: [tailwindcss() as any],
   },
-  css: ['~/assets/global.css'],
+  modules: ['@pinia/nuxt'],
+  pinia: {
+    storesDirs: ['~/stores/**/*.ts'], // Adjust the path to your stores
+  },
+  css: ['~/assets/css/globals.css'],
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || '', // From .env

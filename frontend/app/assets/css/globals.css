@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@plugin 'daisyui';
 
 /* You can add your global styles below */
 html,

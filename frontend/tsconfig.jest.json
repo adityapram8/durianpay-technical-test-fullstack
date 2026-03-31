@@ -14,10 +14,5 @@
       "~/*": ["app/*"]
     }
   },
-  "include": [
-    "app/**/*.ts",
-    "app/**/*.vue",
-    "tests/**/*.ts",
-    "__mocks__/**/*.ts"
-  ]
+  "include": ["app/**/*.ts", "app/**/*.vue", "tests/**/*.ts"]
 }
